@@ -1,9 +1,9 @@
 pipeline{
     agent any
 
-    environment {
+    /*environment {
         TF_LOG = "TRACE"  // Set Terraform log level to TRACE
-    }
+    }*/
 
     stages{
         stage('terraform init'){
