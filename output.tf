@@ -11,7 +11,7 @@ output "instance_details" {
     for i in aws_instance.example_instance :
     {
       id   = i.id
-      name = var.instance_names[count.index]
+      name = var.instance_name[count.index]
       ip   = i.public_ip
     }
   ]

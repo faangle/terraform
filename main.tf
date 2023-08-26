@@ -4,6 +4,6 @@ resource "aws_instance" "example_instance" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = var.instance_names[count.index]
+    Name = var.instance_name[count.index]
   }
 }
