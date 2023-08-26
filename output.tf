@@ -17,6 +17,6 @@
 #  ]
 #}
 
-output "instance_details" {
-  value = aws_instance.example_instance[*].id
-}
+#output "instance_details" {
+#  value = aws_instance.example_instance[*].id
+#}
