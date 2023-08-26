@@ -5,6 +5,6 @@ resource "aws_instance" "example_instance" {
 
   tags = {
     #Name = var.instance_name[count.index]
-    Name = element(var.instance_names, count.index)
+    Name = element(var.instance_name, count.index)
   }
 }
